@@ -29,7 +29,6 @@ steps:
     backendType: 'azurerm'
     backendServiceArm: 'Azure'
     ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraform-backend-rg'
     backendAzureRmResourceGroupLocation: 'westeurope'
     backendAzureRmStorageAccountName: 'storageaccoutmayank1500ms'
     backendAzureRmContainerName: 'accountmayank1500ms'
