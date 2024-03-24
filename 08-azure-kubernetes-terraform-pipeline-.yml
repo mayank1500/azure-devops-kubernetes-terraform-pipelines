@@ -20,7 +20,6 @@ steps:
     secureFile: 'id_rsa.pub'
 
 
-
 - task: TerraformCLI@1
   inputs:
     command: 'init'
@@ -29,6 +28,7 @@ steps:
     backendType: 'azurerm'
     backendServiceArm: 'Azure'
     ensureBackend: true
+    backendAzureRmResourceGroupName: 'New123'
     backendAzureRmResourceGroupLocation: 'westeurope'
     backendAzureRmStorageAccountName: 'storageaccoutmayank1500ms'
     backendAzureRmContainerName: 'accountmayank1500ms'
