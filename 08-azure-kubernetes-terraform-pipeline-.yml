@@ -18,6 +18,9 @@ steps:
   name: publickey
   inputs:
     secureFile: 'id_rsa.pub'
+
+
+
 - task: TerraformCLI@1
   inputs:
     command: 'init'
@@ -25,7 +28,6 @@ steps:
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(cleint_secret) -var cssh_public_key=$(publickey.securefilepath)'
     backendType: 'azurerm'
     backendServiceArm: 'Azure'
-    backendAzureRmSubscriptionId: 'Azure-id'
     ensureBackend: true
     backendAzureRmResourceGroupName: 'terraform-backend-rg'
     backendAzureRmResourceGroupLocation: 'westeurope'
