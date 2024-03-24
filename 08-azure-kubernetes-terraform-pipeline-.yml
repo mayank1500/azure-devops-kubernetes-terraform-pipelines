@@ -19,14 +19,13 @@ steps:
   inputs:
     secureFile: 'id_rsa.pub'
 
-
 - task: TerraformCLI@1
   inputs:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(cleint_secret) -var cssh_public_key=$(publickey.securefilepath)'
     backendType: 'azurerm'
-    backendServiceArm: 'Azure'
+    backendServiceArm: 'Free Trial(1038d8e4-117d-46d9-add3-21978970ecad)'
     ensureBackend: true
     backendAzureRmResourceGroupName: 'New123'
     backendAzureRmResourceGroupLocation: 'westeurope'
