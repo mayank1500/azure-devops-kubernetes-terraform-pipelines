@@ -33,13 +33,3 @@ steps:
     backendAzureRmContainerName: 'accountmayank1500ms'
     backendAzureRmKey: 'k8s.tfstate'
     allowTelemetryCollection: true
-    backendType: 'azurerm'
-    backendServiceArm: 'Azure'
-    backendAzureRmSubscriptionId: 'Azure-id'
-    ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraform-backend-rg'
-    backendAzureRmResourceGroupLocation: 'westeurope'
-    backendAzureRmStorageAccountName: 'storageaccoutmayank1500ms'
-    backendAzureRmContainerName: 'accountmayank1500ms'
-    backendAzureRmKey: 'k8s.tfstate'
-    allowTelemetryCollection: true
