@@ -29,7 +29,6 @@ steps:
     ensureBackend: true
     backendAzureRmResourceGroupName: 'New123'
     backendAzureRmResourceGroupLocation: 'westeurope'
-    backendAzureRmStorageAccountName: 'storageaccoutmayankaccountqwerty'
     backendAzureRmContainerName: 'accountmayank1500ms'
     backendAzureRmKey: 'k8s.tfstate'
     allowTelemetryCollection: true
